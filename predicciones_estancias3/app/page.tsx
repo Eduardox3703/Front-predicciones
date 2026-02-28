@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [artistas, setArtistas] = useState<string[]>([]);
-
   const [resultado, setResultado] = useState<number | null>(null);
   const [ocupacion, setOcupacion] = useState<number | null>(null);
   const [veredicto, setVeredicto] = useState<string | null>(null);
@@ -24,13 +22,6 @@ export default function Home() {
     seguidores_ig: "",
     seguidores_fb: "",
   });
-
-  useEffect(() => {
-    fetch("http://127.0.0.1:8001/artistas")
-      .then((res) => res.json())
-      .then((data) => setArtistas(data.artistas))
-      .catch((err) => console.error(err));
-  }, []);
 
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -120,20 +111,15 @@ export default function Home() {
             🎤 Detalles del Artista
           </h2>
 
-          <label>Nombre del Artista</label>
-          <select
-            name="artista"
-            value={formData.artista}
-            onChange={handleChange}
-            className="w-full p-3 mt-1 mb-6 rounded-xl bg-black/40 border border-white/10"
-          >
-            <option value="">Seleccionar artista</option>
-            {artistas.map((artista, index) => (
-              <option key={index} value={artista}>
-                {artista}
-              </option>
-            ))}
-          </select>
+        <label>Nombre del Artista</label>
+        <input
+          type="text"
+          name="artista"
+          value={formData.artista}
+          onChange={handleChange}
+          placeholder="Ej. Morat, Peso Pluma, New Norte Mx"
+          className="w-full p-3 mt-1 mb-6 rounded-xl bg-black/40 border border-white/10"
+        />
 
           {/* Slider Popularidad */}
           <div className="mb-8">
