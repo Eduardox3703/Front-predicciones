@@ -1,0 +1,112 @@
+[00:00:02.534] Server  LOG     ✓ Ready in 2.3s
+[00:00:09.977] Server  WARN    ⚠ Cross origin request detected from 192.168.100.33 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:10.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:27.838] Server  LOG     ✓ Compiled in 604ms
+[00:19:57.975] Server  LOG     ✓ Compiled in 117ms
+[00:20:12.496] Server  LOG     ✓ Compiled in 31ms
+[00:25:04.019] Server  LOG     ✓ Compiled in 119ms
+[00:25:25.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:44.821] Browser ERROR   Error API: {"detail":[{"type":"missing","loc":["body","capacidad_maxima"],"msg":"Field required","input":{"artista":"Alejandro Sanz","lugar":"AUDITORIO NACIONAL","capacidad_recinto":10000,"precio_promedio":3946.5,"popularidad":79,"seguidores":8663918,"oyentes_mensuales":18708733,"seguidores_ig":7900000}},{"type":"missing","loc":["body","genero_principal"],"msg":"Field required","input":{"artista":"Alejandro Sanz","lugar":"AUDITORIO NACIONAL","capacidad_recinto":10000,"precio_promedio":3946.5,"popularidad":79,"seguidores":8663918,"oyentes_mensuales":18708733,"seguidores_ig":7900000}},{"type":"missing","loc":["body","popularidad_spotify"],"msg":"Field required","input":{"artista":"Alejandro Sanz","lugar":"AUDITORIO NACIONAL","capacidad_recinto":10000,"precio_promedio":3946.5,"popularidad":79,"seguidores":8663918,"oyentes_mensuales":18708733,"seguidores_ig":7900000}},{"type":"missing","loc":["body","seguidores_spotify"],"msg":"Field required","input":{"artista":"Alejandro Sanz","lugar":"AUDITORIO NACIONAL","capacidad_recinto":10000,"precio_promedio":3946.5,"popularidad":79,"seguidores":8663918,"oyentes_mensuales":18708733,"seguidores_ig":7900000}}]}
+[00:26:44.824] Browser ERROR   Error: {}
+[00:29:20.697] Server  LOG     ✓ Compiled in 195ms
+[00:29:53.877] Server  LOG     ✓ Compiled in 179ms
+[00:30:07.605] Server  LOG     ✓ Compiled in 86ms
+[00:30:25.352] Server  LOG     ✓ Compiled in 72ms
+[00:30:33.971] Server  LOG     ✓ Compiled in 59ms
+[00:30:44.662] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'toLocaleString')
+[00:48:19.067] Server  LOG     ✓ Compiled in 441ms
+[00:48:19.242] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:20.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:54.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:59.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:09.473] Browser ERROR   Respuesta inesperada: {"prediccion":{"asistencia_estimada":9811,"porcentaje_ocupacion":0.9811,"veredicto_comercial":"SOLD OUT TOTAL"},"status":"success"}
+[00:50:20.316] Browser ERROR   Respuesta inesperada: {"prediccion":{"asistencia_estimada":9811,"porcentaje_ocupacion":0.9811,"veredicto_comercial":"SOLD OUT TOTAL"},"status":"success"}
+[01:10:43.299] Server  LOG     ✓ Compiled in 987ms
+[01:11:11.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:09.188] Browser ERROR   Respuesta inesperada: {"prediccion":{"asistencia_estimada":10000,"porcentaje_ocupacion":1,"veredicto_comercial":"SOLD OUT TOTAL"},"status":"success"}
+[01:14:18.971] Browser ERROR   Respuesta inesperada: {"prediccion":{"asistencia_estimada":10000,"porcentaje_ocupacion":1,"veredicto_comercial":"SOLD OUT TOTAL"},"status":"success"}
+[01:14:20.564] Browser ERROR   Respuesta inesperada: {"prediccion":{"asistencia_estimada":10000,"porcentaje_ocupacion":1,"veredicto_comercial":"SOLD OUT TOTAL"},"status":"success"}
+[01:15:52.740] Server  LOG     ✓ Compiled in 197ms
+[01:26:40.492] Browser ERROR   ./app/page.tsx:305:2
+Parsing ecmascript source code failed
+  303 |     </div>
+  304 |   );
+> 305 | }
+      |  ^
+
+Expected '}', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:26:40.492] Browser ERROR   ./app/page.tsx:101:4
+Parsing ecmascript source code failed
+   99 |   setError("No se pudo obtener la predicción.");
+  100 | }
+> 101 |   };
+      |    ^
+  102 |
+  103 |   return (
+  104 |     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-purple-950 text-white p-6">
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:26:41.011] Browser ERROR   ./app/page.tsx:305:2
+Parsing ecmascript source code failed
+  303 |     </div>
+  304 |   );
+> 305 | }
+      |  ^
+
+Expected '}', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:26:41.011] Browser ERROR   ./app/page.tsx:101:4
+Parsing ecmascript source code failed
+   99 |   setError("No se pudo obtener la predicción.");
+  100 | }
+> 101 |   };
+      |    ^
+  102 |
+  103 |   return (
+  104 |     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-purple-950 text-white p-6">
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[01:26:56.607] Server  LOG     ✓ Compiled in 236ms
+[01:30:18.730] Server  LOG     ✓ Compiled in 205ms
+[01:30:23.415] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:39.187] Server  LOG     ✓ Compiled in 99ms
+[01:35:29.560] Server  LOG     ✓ Compiled in 248ms
+[01:37:43.699] Server  LOG     ✓ Compiled in 200ms
+[01:37:53.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:38:09.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
