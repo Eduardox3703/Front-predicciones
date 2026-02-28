@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Animación personalizada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Slider Morado Moderno */
+.slider-purple {
+  background: linear-gradient(to right, #7c3aed, #a855f7);
+}
+
+.slider-purple::-webkit-slider-thumb {
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #c084fc;
+  cursor: pointer;
+  box-shadow: 0 0 10px #a855f7;
+  transition: 0.2s;
+}
+
+.slider-purple::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+.slider-purple::-moz-range-thumb {
+  background: #c084fc;
+  border: none;
+}
